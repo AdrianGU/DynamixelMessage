@@ -1,5 +1,5 @@
 #include "DynamixelMessage.h"
-//#include <Arduino.h>
+
 
 
 
@@ -105,6 +105,7 @@ uint8_t DynamixelMessage::get_value() const {
 void DynamixelMessage::set_value(uint8_t _value) {
     DynamixelMessage::_value = _value;
 }
+
 
 
 

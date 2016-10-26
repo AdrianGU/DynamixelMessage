@@ -1,3 +1,5 @@
+#ifndef DynamixelMessage_H
+#define DynamixelMessage_H
 
 #include <cstdint>
 
@@ -103,3 +105,4 @@ private:
     uint8_t _reg;
     uint8_t _value;
 };
+#endif
