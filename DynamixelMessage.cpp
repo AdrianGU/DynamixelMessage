@@ -1,5 +1,5 @@
 #include "DynamixelMessage.h"
-//#include <Arduino.h>
+
 
 
 
@@ -27,19 +27,18 @@ void DynamixelMessage::assemblePacket()
     pkt[1] = 0XFF;
     pkt[2] = DynamixelMessage::_id;
     pkt[3] = DynamixelMessage::_length+4;
+
     if(is_write())
     {
         pkt[4]=_WRITE_SERVO_DATA;
-
     }else if(is_syncwrite())
     {
         pkt[4] = _WRITE_SYNC_SERVO_DATA;
-
     }else
     {
         pkt[4] = _READ_SERVO_DATA;
-
     }
+
     pkt[5] =DynamixelMessage::_reg;
     pkt[6] =DynamixelMessage::_value;
     //checksum = ~(pkt[2] + pkt[3] + pkt[4] + pkt[5] + pkt[6] + pkt[7]);

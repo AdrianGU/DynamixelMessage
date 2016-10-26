@@ -1,3 +1,5 @@
+#ifndef DynamixelMessage_H
+#define DynamixelMessage_H
 
 #include <cstdint>
 
