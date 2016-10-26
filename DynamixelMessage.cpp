@@ -112,3 +112,4 @@ void DynamixelMessage::set_value(uint8_t _value) {
 
 
 
+

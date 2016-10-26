@@ -105,3 +105,4 @@ private:
     uint8_t _reg;
     uint8_t _value;
 };
+#endif
